@@ -1,0 +1,22 @@
+
+    <section id="cover" [ngStyle]="{'background' : 'url(./assets/img/view.jpg)'}">
+    <form id="form" method="post">
+        <div id="cover-caption">
+            <div class="container">
+                <div class="col-sm-10 col-offset-sm-1">
+                    
+                </div>
+            </div>
+            <div class="col_md_sign_up">
+                <div class="cont_ba_opcitiy">
+                    <h2 style="margin-top: 10%">Mobile Verification</h2>
+                    <input id="otp" type="password" name="otp" required><br><br>
+                    <input type="button" class="btn btn-primary" [routerLink]="['/home']" value="Verify">
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-otp">
+            <a href="#" class="otp-link">Resend OTP</a>.
+        </div>
+        </form>
+    </section>

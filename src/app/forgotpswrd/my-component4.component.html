@@ -1,0 +1,30 @@
+
+    <section id="cover" [ngStyle]="{'background' : 'url(./assets/img/view.jpg)'}">
+        <div id="cover-caption">
+            <div class="container">
+                <div class="col-sm-10 col-offset-sm-1">
+                    <br>
+                    <h1>
+                        Forgot Password
+                    </h1>
+                    <br>
+
+                    <form name="registration">
+                        <div class="form-group">
+                            <input name="numid" type="text" class="form-control is-invalid" id="validationServer01" placeholder="Enter Number" required>
+                            <div class="invalid-number">
+                                Enter mobile number which you have registered.
+                            </div>
+                            <br>
+                            <div class="form-row text-center">
+                                <div class="col-12">
+                                        <input type="submit" class="btn btn-primary" [routerLink]="['/otp']" value="Submit">
+                                         <input type="submit" class="btn btn-primary" [routerLink]="['/changepswrd']" value="Change Password">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    </div>
+                    </div>
+    </section>

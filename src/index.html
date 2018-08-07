@@ -4,11 +4,55 @@
   <meta charset="utf-8">
   <title>MyApp2</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.js"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.js"></script>
 </head>
+<style type="text/css">
+       section#cover{
+        color:rgb(56, 58, 59);
+        height: 91%;
+        text-align: center;   
+        padding-bottom: 40px;
+    }
+    section,nav{
+        margin-bottom: 1px;
+    }
+    nav{
+        background-color: #ff0081;
+    }
+</style>
 <body>
+   <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/images.png" width="30" height="30" class="d-inline-block align-top" alt=""> DressMakers Place
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            ContactUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Help?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="front">
+                            Home</a>
+                            
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   <app-root></app-root>
 </body>
 </html>

@@ -1,0 +1,49 @@
+
+    <section id="cover" [ngStyle]="{'background' : 'url(./assets/img/view.jpg)'}">
+        <div id="cover-caption">
+            <div class="container">
+                <div class="col-sm-10 col-offset-sm-1">
+                    <br>
+                    <br>
+                    <h1>
+                        Clients Home
+                    </h1>
+                    <br>
+                    <form [formGroup]="angForm" novalidate>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input formControlName="numid" autocomplete type="text" class="form-control" placeholder="Enter Number">
+                        <div *ngIf="(angForm.controls['numid'].invalid) &&(angForm.controls['numid'].touched)" class="alert alert-danger">
+                            <div *ngIf="angForm.controls['numid'].errors.required">Number is required</div>
+                            </div>           
+                        <div class="invalid-number">
+                            Please provide a valid 10 digit number.
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="singlebutton"></label>
+                        </div>
+                        <div class="form-row text-center">
+                            <div class="col-12">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                        <div class="alert alert-login">
+                            <strong>Already have account?</strong>
+                            <a href="#" class="login-link" [routerLink]="['/login']">Login</a>.
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <router-outlet></router-outlet>
